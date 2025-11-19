@@ -1,0 +1,85 @@
+/* train.css */
+
+.carte {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  height: 50px;
+
+  padding: 10px;
+  margin-bottom: 0.75rem;
+
+  background: #e9effff5;
+  border-radius: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.45),
+    0 0 0 1px rgba(15, 23, 42, 0.6);
+
+  color: #e5e7eb;
+}
+
+.destination {
+  flex: 1;
+  font-size: 30px;
+  letter-spacing: 0.01em;
+  color: #000000;
+
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .carte {
+    padding: 0.85rem 1rem;
+    gap: 0.9rem;
+  }
+
+  .destination {
+    font-size: 0.98rem;
+  }
+
+  .ligne {
+    font-size: 0.8rem;
+    min-width: 2.8rem;
+  }
+}
+
+.picto {
+  width: 50px;
+  height: fit-content;
+}
+
+.horaires {
+  width: 55px;
+  height: 55px;
+  padding: 4px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #020617;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(15, 23, 42, 0.7), 0 0 0 1px rgba(15, 23, 42, 0.9);
+
+  color: #f9fafb;
+  box-sizing: border-box;
+}
+
+.trestant {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.voie {
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+
+  font-size: 15px;
+  font-weight: 600;
+}
